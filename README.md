@@ -17,6 +17,34 @@ To use the extension, add the dependency to the target project:
   <version>{latest-maven-release}</version>
 </dependency>
 ```
+## Simple usage
+```java
+import io.quarkiverse.hibernate.types.json.JsonBinaryType;
+import io.quarkiverse.hibernate.types.json.JsonType;
+import io.quarkiverse.hibernate.types.json.JsonTypes;
+
+@Entity
+@TypeDef(name = JsonTypes.JSON, typeClass = JsonType.class)
+@TypeDef(name = JsonTypes.JSON_BIN, typeClass = JsonBinaryType.class)
+public class MyEntity {
+
+    @Id
+    @Column(name = "ID")
+    private String id;
+
+    @Type(type = JsonTypes.JSON_BIN)
+    @Column(name = "PARAM", columnDefinition = JsonTypes.JSON_BIN)
+    private MyParam param;
+}
+```
+```java
+public class MyParam {
+
+    private String id;
+
+    private String name;
+}
+```
 
 ## Contributors ✨
 
