@@ -9,9 +9,11 @@ import org.hibernate.annotations.TypeDef;
 
 import io.quarkiverse.hibernate.types.json.JsonType;
 import io.quarkiverse.hibernate.types.json.JsonTypes;
+import io.quarkus.runtime.annotations.RegisterForReflection;
 
 @TypeDef(name = JsonTypes.JSON, typeClass = JsonType.class)
 @Entity
+@RegisterForReflection
 public class MyEntity {
 
     @Id

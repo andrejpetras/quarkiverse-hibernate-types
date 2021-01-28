@@ -1,5 +1,8 @@
 package io.quarkiverse.hibernate.types.it.jackson.mysql;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
+@RegisterForReflection
 public class MyParam {
 
     private String id;

@@ -5,13 +5,13 @@ Quarkus Hibernate types extension is based on the https://github.com/vladmihalce
 
 == Installation
 
-If you want to use this extension, you need to add the `quarkiverse-<YOUR_EXTENSION>` extension first.
+If you want to use this extension, you need to add the `quarkiverse-hibernate-types` extension first.
 In your `pom.xml` file, add:
 
 [source,xml]
 ----
 <dependency>
-    <groupId>io.quarkiverse</groupId>
+    <groupId>io.quarkiverse.hibernate</groupId>
     <artifactId>quarkus-hibernate-types</artifactId>
     <version>0.1.0</version>
 </dependency>
