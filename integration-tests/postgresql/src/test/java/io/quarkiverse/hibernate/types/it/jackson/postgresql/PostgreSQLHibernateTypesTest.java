@@ -32,7 +32,9 @@ public class PostgreSQLHibernateTypesTest {
         Assertions.assertEquals("1", entity.getId());
         Assertions.assertNotNull(entity.getJsonb());
         Assertions.assertEquals("1", entity.getJsonb().getId());
+        Assertions.assertEquals("test1", entity.getJsonb().getName());
         Assertions.assertNotNull(entity.getVarchar());
         Assertions.assertEquals("1", entity.getVarchar().getId());
+        Assertions.assertEquals("test1", entity.getVarchar().getName());
     }
 }

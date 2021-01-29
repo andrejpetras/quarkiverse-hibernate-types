@@ -1,4 +1,4 @@
-package io.quarkiverse.hibernate.types.it.jackson.postgresql;
+package io.quarkiverse.hibernate.types.it.jackson.mysql;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/tests")
-public class HibernateTypesTestEndpoint {
+public class TestRestController {
 
     @Inject
     EntityManager em;
